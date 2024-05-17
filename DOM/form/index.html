@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Formulário Js</title>
+  </head>
+  <body>
+    <div>
+      <form id="formContato">
+        <h3>Cadastro de Usuários</h3>
+        <div>
+          <div>
+            <div>
+              <label for="nome">Nome:</label>
+              <input type="text" id="nome" name="nome" required />
+            </div>
+            <div>
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+          </div>
+          <div class="image">
+            <label for="foto">Foto de perfil</label>
+            <input type="file" id="foto" name="foto" accept="image/*" />
+            <img id="preview" alt="Pré-visualização da Foto" />
+          </div>
+        </div>
+        <div class="buttonDiv">
+          <button type="reset" class="clean">Limpar</button>
+          <button type="submit" class="submit">Enviar</button>
+        </div>
+      </form>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
